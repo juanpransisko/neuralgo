@@ -206,7 +206,7 @@ public class FLVQMain {
 				
 		
 		/* Testing data */
-		Data[] test_input = new Data[6];
+		Data[] test_input = new Data[56];
 		double[][] test_attrib = new double[][] {
 			{107,2}, {107,2}, {450,3}, {52,0}, {673,3}, {669,2}, 
 			{651,0}, {39,1}, {057,4}, {675,2}, {460,2}, {416,1}, 
@@ -245,8 +245,8 @@ public class FLVQMain {
 		/* Testing */
 		for (int x = 0; x < test_input.length; x ++) {
 			int pred_val = crime_flvq.predict(test_input[x]);
-			System.out.print("Predicted = " + pred_val);
-			System.out.println(" | Actual = " + test_class[x]);
+			System.out.print(pred_val);
+			System.out.println(" " + test_class[x]);
 		}
 
 	}	
