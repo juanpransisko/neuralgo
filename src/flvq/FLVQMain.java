@@ -8,35 +8,35 @@ public class FLVQMain {
 	
 	public static void main(String[] args) throws IOException {
 
-		/** Crime lvq network
+		/** Crime flvq network
 		 *		learning rate:	0.9
 		 *		iterations:		10000
 		 *		neurons:		9
 		 *		clusters:		3 (Murder, Rape, Robbery)
 		 *		type:			0 			*/
-		FLVQNetwork crime_lvq = new LVQNetwork(0.9, 1000, 60, 3, 0, 700, 1);
+		FLVQNet crime_flvq = new FLVQNet(0.9, 1000, 60, 3, 0, 700, 1);
 	
-		/** Victim gender lvq network
+		/** Victim gender flvq network
 		 *		learning rate:	0.9
 		 *		iterations:		10000
 		 *		neurons:		10
 		 *		clusters:		2 (Male, Female)
 		 *		type:			0 			*/
-		// LVQNetwork gender_lvq = new LVQNetwork(0.9, 10000, 10, 2, 0);
+		FLVQNet gender_flvq = new FLVQNet(0.9, 10000, 10, 2, 0, 700, 0);
 
-		/** Victim age group lvq network
+		/** Victim age group flvq network
 		 *		learning rate:	0.9
 		 *		iterations:		10000
 		 *		neurons:		10
 		 *		clusters:		7 (AG1, AG2, AG3, AG4, AG5, AG6, AG7)
 		 *		type:			0 			*/
-		// LVQNetwork age_group_lvq = new LVQNetwork(0.9, 10000, 10, 2, 0);
+		FLVQNet age_group_flvq = new FLVQNet(0.9, 10000, 10, 2, 0, 700, 0);
 
 
 		// Network initialization
-		crime_lvq.initialize();
-		// gender_lvq.initialize();
-		// age_group_lvq.initialize();
+		crime_flvq.initialize();
+		gender_flvq.initialize();
+		age_group_flvq.initialize();
 
 		
 		/* For crime LVQ training data
@@ -129,8 +129,29 @@ public class FLVQMain {
 			crime_inputs[idx].set_attrib(tr_crime_lvq[idx]);
 		}
 
-		/* Training */
-		crime_lvq.train(crime_inputs, crime_inputs.length);
+		/* Crime FLVQ Training */
+		crime_flvq.train(crime_inputs, crime_inputs.length);
+				
+		
+		/* Testing data */
+		Data[] test_input = new Data[6];
+		double[][] test_attrib = new double[][] {{107,2}, {107,2}, {450,3}, {052,0}, {673,3}, {669,2}};
+		int[] test_class = new int[] { 0, 0, 0, 1, 1, 1 };
+
+		for (int i = 0; i < test_input.length; i ++) {
+			test_input[i] = new Data();
+			test_input[i].set_attrib(test_attrib[i]);
+			test_input[i].set_category(test_class[i]);
+		}
+		
+
+		/* Testing */
+		for (int x = 0; x < test_input.length; x ++) {
+			int pred_val = crime_flvq.predict(test_input[x]);
+			System.out.print("Predicted = " + pred_val);
+			System.out.println("Actual = " + test_class[x]);
+		}
+
 	}	
 
 }
