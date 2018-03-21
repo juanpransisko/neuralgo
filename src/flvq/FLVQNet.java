@@ -184,7 +184,7 @@ public class FLVQNet {
 			System.out.println("\t| Updated attrib: " + Arrays.toString(neurons[winner_pos].get_attrib()) + "");
 
 			this.itr ++;	// increment iteration counter
-			this.learning_rate = (this.learning_rate * 0.5);	// decrease learning rate
+			// this.learning_rate = (this.learning_rate * 0.5);	// decrease learning rate
 		}
 		/*
 		for (int i = 0; i < neurons.length; i ++) {
