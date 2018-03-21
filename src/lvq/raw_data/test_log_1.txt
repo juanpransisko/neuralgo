@@ -1,0 +1,273 @@
+run:
+LVQ Network initialized with:
+Learning rate: 0.6
+Iterations: 50
+No. of Neurons: 5
+No. of Clusters: 3
+Initialization START ...
+Neuron no. 0| 	Category: 1| 	Weights: [2.0, 3.0]
+Neuron no. 1| 	Category: 2| 	Weights: [8.0, 4.0]
+Neuron no. 2| 	Category: 1| 	Weights: [5.0, 3.0]
+Neuron no. 3| 	Category: 2| 	Weights: [0.0, 8.0]
+Neuron no. 4| 	Category: 1| 	Weights: [6.0, 6.0]
+Initialization DONE ...
+
+Training START ...
+Iteration: 1
+	| Rand Input attrib: [0.0, 188.0]
+	| Winner neuron attrib: [0.0, 8.0]
+	| Updated attrib: [0.0, -100.0]
+
+Iteration: 2
+	| Rand Input attrib: [0.0, 179.0]
+	| Winner neuron attrib: [6.0, 6.0]
+	| Updated attrib: [9.6, -97.8]
+
+Iteration: 3
+	| Rand Input attrib: [1.0, 153.0]
+	| Winner neuron attrib: [8.0, 4.0]
+	| Updated attrib: [12.2, -85.39999999999999]
+
+Iteration: 4
+	| Rand Input attrib: [0.0, 230.0]
+	| Winner neuron attrib: [2.0, 3.0]
+	| Updated attrib: [3.2, -133.2]
+
+Iteration: 5
+	| Rand Input attrib: [0.0, 109.0]
+	| Winner neuron attrib: [5.0, 3.0]
+	| Updated attrib: [8.0, -60.599999999999994]
+
+Iteration: 6
+	| Rand Input attrib: [0.0, 128.0]
+	| Winner neuron attrib: [8.0, -60.599999999999994]
+	| Updated attrib: [3.2, 52.56]
+
+Iteration: 7
+	| Rand Input attrib: [0.0, 698.0]
+	| Winner neuron attrib: [3.2, 52.56]
+	| Updated attrib: [5.12, -334.704]
+
+Iteration: 8
+	| Rand Input attrib: [0.0, 128.0]
+	| Winner neuron attrib: [12.2, -85.39999999999999]
+	| Updated attrib: [19.52, -213.44]
+
+Iteration: 9
+	| Rand Input attrib: [1.0, 153.0]
+	| Winner neuron attrib: [9.6, -97.8]
+	| Updated attrib: [14.759999999999998, -248.27999999999997]
+
+Iteration: 10
+	| Rand Input attrib: [0.0, 109.0]
+	| Winner neuron attrib: [0.0, -100.0]
+	| Updated attrib: [0.0, -225.39999999999998]
+
+Iteration: 11
+	| Rand Input attrib: [0.0, 18.0]
+	| Winner neuron attrib: [3.2, -133.2]
+	| Updated attrib: [1.2800000000000002, -42.480000000000004]
+
+Iteration: 12
+	| Rand Input attrib: [1.0, 651.0]
+	| Winner neuron attrib: [1.2800000000000002, -42.480000000000004]
+	| Updated attrib: [1.4480000000000004, -458.56800000000004]
+
+Iteration: 13
+	| Rand Input attrib: [0.0, 128.0]
+	| Winner neuron attrib: [19.52, -213.44]
+	| Updated attrib: [31.232, -418.304]
+
+Iteration: 14
+	| Rand Input attrib: [0.0, 128.0]
+	| Winner neuron attrib: [0.0, -225.39999999999998]
+	| Updated attrib: [0.0, -437.43999999999994]
+
+Iteration: 15
+	| Rand Input attrib: [0.0, 18.0]
+	| Winner neuron attrib: [14.759999999999998, -248.27999999999997]
+	| Updated attrib: [5.904, -88.512]
+
+Iteration: 16
+	| Rand Input attrib: [0.0, 655.0]
+	| Winner neuron attrib: [5.904, -88.512]
+	| Updated attrib: [9.4464, -534.6192]
+
+Iteration: 17
+	| Rand Input attrib: [0.0, 18.0]
+	| Winner neuron attrib: [5.12, -334.704]
+	| Updated attrib: [2.048, -123.08160000000001]
+
+Iteration: 18
+	| Rand Input attrib: [0.0, 667.0]
+	| Winner neuron attrib: [2.048, -123.08160000000001]
+	| Updated attrib: [3.2767999999999997, -597.13056]
+
+Iteration: 19
+	| Rand Input attrib: [1.0, 123.0]
+	| Winner neuron attrib: [31.232, -418.304]
+	| Updated attrib: [49.3712, -743.0863999999999]
+
+Iteration: 20
+	| Rand Input attrib: [0.0, 657.0]
+	| Winner neuron attrib: [1.4480000000000004, -458.56800000000004]
+	| Updated attrib: [2.3168000000000006, -1127.9088]
+
+Iteration: 21
+	| Rand Input attrib: [1.0, 651.0]
+	| Winner neuron attrib: [2.3168000000000006, -1127.9088]
+	| Updated attrib: [3.106880000000001, -2195.2540799999997]
+
+Iteration: 22
+	| Rand Input attrib: [1.0, 416.0]
+	| Winner neuron attrib: [0.0, -437.43999999999994]
+	| Updated attrib: [-0.6, -949.5039999999999]
+
+Iteration: 23
+	| Rand Input attrib: [1.0, 416.0]
+	| Winner neuron attrib: [9.4464, -534.6192]
+	| Updated attrib: [14.514240000000001, -1104.9907199999998]
+
+Iteration: 24
+	| Rand Input attrib: [0.0, 667.0]
+	| Winner neuron attrib: [3.106880000000001, -2195.2540799999997]
+	| Updated attrib: [4.971008000000002, -3912.6065279999993]
+
+Iteration: 25
+	| Rand Input attrib: [0.0, 109.0]
+	| Winner neuron attrib: [3.2767999999999997, -597.13056]
+	| Updated attrib: [5.2428799999999995, -1020.8088959999999]
+
+Iteration: 26
+	| Rand Input attrib: [1.0, 651.0]
+	| Winner neuron attrib: [4.971008000000002, -3912.6065279999993]
+	| Updated attrib: [7.353612800000003, -6650.770444799999]
+
+Iteration: 27
+	| Rand Input attrib: [0.0, 696.0]
+	| Winner neuron attrib: [7.353612800000003, -6650.770444799999]
+	| Updated attrib: [11.765780480000004, -11058.832711679997]
+
+Iteration: 28
+	| Rand Input attrib: [1.0, 416.0]
+	| Winner neuron attrib: [11.765780480000004, -11058.832711679997]
+	| Updated attrib: [18.225248768000007, -17943.732338687994]
+
+Iteration: 29
+	| Rand Input attrib: [0.0, 157.0]
+	| Winner neuron attrib: [49.3712, -743.0863999999999]
+	| Updated attrib: [78.99392, -1283.1382399999998]
+
+Iteration: 30
+	| Rand Input attrib: [0.0, 651.0]
+	| Winner neuron attrib: [18.225248768000007, -17943.732338687994]
+	| Updated attrib: [29.16039802880001, -29100.571741900792]
+
+Iteration: 31
+	| Rand Input attrib: [0.0, 653.0]
+	| Winner neuron attrib: [29.16039802880001, -29100.571741900792]
+	| Updated attrib: [46.65663684608002, -46952.71478704127]
+
+Iteration: 32
+	| Rand Input attrib: [0.0, 667.0]
+	| Winner neuron attrib: [46.65663684608002, -46952.71478704127]
+	| Updated attrib: [74.65061895372803, -75524.54365926603]
+
+Iteration: 33
+	| Rand Input attrib: [0.0, 698.0]
+	| Winner neuron attrib: [74.65061895372803, -75524.54365926603]
+	| Updated attrib: [119.44099032596483, -121258.06985482565]
+
+Iteration: 34
+	| Rand Input attrib: [1.0, 416.0]
+	| Winner neuron attrib: [119.44099032596483, -121258.06985482565]
+	| Updated attrib: [190.5055845215437, -194262.51176772104]
+
+Iteration: 35
+	| Rand Input attrib: [0.0, 655.0]
+	| Winner neuron attrib: [190.5055845215437, -194262.51176772104]
+	| Updated attrib: [304.8089352344699, -311213.01882835367]
+
+Iteration: 36
+	| Rand Input attrib: [0.0, 230.0]
+	| Winner neuron attrib: [304.8089352344699, -311213.01882835367]
+	| Updated attrib: [487.69429637515185, -498078.8301253659]
+
+Iteration: 37
+	| Rand Input attrib: [0.0, 157.0]
+	| Winner neuron attrib: [487.69429637515185, -498078.8301253659]
+	| Updated attrib: [780.310874200243, -797020.3282005854]
+
+Iteration: 38
+	| Rand Input attrib: [0.0, 651.0]
+	| Winner neuron attrib: [780.310874200243, -797020.3282005854]
+	| Updated attrib: [1248.497398720389, -1275623.1251209367]
+
+Iteration: 39
+	| Rand Input attrib: [0.0, 179.0]
+	| Winner neuron attrib: [1248.497398720389, -1275623.1251209367]
+	| Updated attrib: [1997.5958379526223, -2041104.4001934985]
+
+Iteration: 40
+	| Rand Input attrib: [0.0, 230.0]
+	| Winner neuron attrib: [1997.5958379526223, -2041104.4001934985]
+	| Updated attrib: [3196.153340724196, -3265905.0403095977]
+
+Iteration: 41
+	| Rand Input attrib: [1.0, 153.0]
+	| Winner neuron attrib: [3196.153340724196, -3265905.0403095977]
+	| Updated attrib: [5113.2453451587135, -5225539.864495357]
+
+Iteration: 42
+	| Rand Input attrib: [0.0, 657.0]
+	| Winner neuron attrib: [5113.2453451587135, -5225539.864495357]
+	| Updated attrib: [8181.192552253941, -8361257.9831925705]
+
+Iteration: 43
+	| Rand Input attrib: [0.0, 240.0]
+	| Winner neuron attrib: [8181.192552253941, -8361257.9831925705]
+	| Updated attrib: [13089.908083606306, -1.3378156773108114E7]
+
+Iteration: 44
+	| Rand Input attrib: [0.0, 698.0]
+	| Winner neuron attrib: [13089.908083606306, -1.3378156773108114E7]
+	| Updated attrib: [20943.85293377009, -2.1405469636972982E7]
+
+Iteration: 45
+	| Rand Input attrib: [1.0, 123.0]
+	| Winner neuron attrib: [20943.85293377009, -2.1405469636972982E7]
+	| Updated attrib: [33509.564694032146, -3.424882521915677E7]
+
+Iteration: 46
+	| Rand Input attrib: [0.0, 128.0]
+	| Winner neuron attrib: [33509.564694032146, -3.424882521915677E7]
+	| Updated attrib: [53615.30351045143, -5.479819715065083E7]
+
+Iteration: 47
+	| Rand Input attrib: [0.0, 696.0]
+	| Winner neuron attrib: [53615.30351045143, -5.479819715065083E7]
+	| Updated attrib: [85784.48561672229, -8.767753304104133E7]
+
+Iteration: 48
+	| Rand Input attrib: [0.0, 230.0]
+	| Winner neuron attrib: [85784.48561672229, -8.767753304104133E7]
+	| Updated attrib: [137255.17698675566, -1.4028419086566612E8]
+
+Iteration: 49
+	| Rand Input attrib: [0.0, 157.0]
+	| Winner neuron attrib: [137255.17698675566, -1.4028419086566612E8]
+	| Updated attrib: [219608.28317880904, -2.2445479958506578E8]
+
+Iteration: 50
+	| Rand Input attrib: [0.0, 655.0]
+	| Winner neuron attrib: [219608.28317880904, -2.2445479958506578E8]
+	| Updated attrib: [351373.25308609445, -3.591280723361052E8]
+
+Neuron no. 0| 	Category: 1| 	Weights: [351373.25308609445, -3.591280723361052E8]
+Neuron no. 1| 	Category: 2| 	Weights: [78.99392, -1283.1382399999998]
+Neuron no. 2| 	Category: 1| 	Weights: [5.2428799999999995, -1020.8088959999999]
+Neuron no. 3| 	Category: 2| 	Weights: [-0.6, -949.5039999999999]
+Neuron no. 4| 	Category: 1| 	Weights: [14.514240000000001, -1104.9907199999998]
+Training DONE ...
+
+BUILD SUCCESSFUL (total time: 0 seconds)
