@@ -96,12 +96,12 @@ public class FLVQNet {
 	// This is to initialize the LVQ network
 	public void initialize() {
 		neurons = this.init_neurons();
-
+                /*
 		for (int i = 0; i < neurons.length; i ++) {
 			System.out.print("Neuron no. " + i);
 			System.out.print("| Category: " + neurons[i].get_category());
 			System.out.println("| Weights: " + Arrays.toString(neurons[i].get_attrib()));
-		}
+		} */ 
 	}
 	
 
@@ -184,14 +184,15 @@ public class FLVQNet {
 			System.out.println("\t| Updated attrib: " + Arrays.toString(neurons[winner_pos].get_attrib()) + "");
 
 			this.itr ++;	// increment iteration counter
-			// this.learning_rate = (this.learning_rate * 0.5);	// decrease learning rate
+			this.learning_rate = (this.learning_rate * 0.5);	// decrease learning rate
 		}
-		
+		/*
 		for (int i = 0; i < neurons.length; i ++) {
 			System.out.print("Neuron no. " + i);
 			System.out.print("| Category: " + neurons[i].get_category());
 			System.out.println("| Weights: " + Arrays.toString(neurons[i].get_attrib()));
 		}
+                */
 	}
 
 	// This is to get random input vector

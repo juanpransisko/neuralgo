@@ -22,7 +22,7 @@ public class FLVQMain {
 		 *		neurons:		10
 		 *		clusters:		2 (Male, Female)
 		 *		type:			0 			*/
-		FLVQNet gender_flvq = new FLVQNet(0.9, 10000, 10, 2, 0, 700, 0);
+		// FLVQNet gender_flvq = new FLVQNet(0.9, 10000, 10, 2, 0, 700, 0);
 
 		/** Victim age group flvq network
 		 *		learning rate:	0.9
@@ -30,13 +30,13 @@ public class FLVQMain {
 		 *		neurons:		10
 		 *		clusters:		7 (AG1, AG2, AG3, AG4, AG5, AG6, AG7)
 		 *		type:			0 			*/
-		FLVQNet age_group_flvq = new FLVQNet(0.9, 10000, 10, 2, 0, 700, 0);
+		// FLVQNet age_group_flvq = new FLVQNet(0.9, 10000, 10, 2, 0, 700, 0);
 
 
 		// Network initialization
 		crime_flvq.initialize();
-		gender_flvq.initialize();
-		age_group_flvq.initialize();
+		// gender_flvq.initialize();
+		// age_group_flvq.initialize();
 
 		
 		/* For crime LVQ training data
@@ -135,7 +135,7 @@ public class FLVQMain {
 		
 		/* Testing data */
 		Data[] test_input = new Data[6];
-		double[][] test_attrib = new double[][] {{107,2}, {107,2}, {450,3}, {052,0}, {673,3}, {669,2}};
+		double[][] test_attrib = new double[][] {{107,2}, {107,2}, {450,3}, {52,0}, {673,3}, {669,2}};
 		int[] test_class = new int[] { 0, 0, 0, 1, 1, 1 };
 
 		for (int i = 0; i < test_input.length; i ++) {
@@ -149,7 +149,7 @@ public class FLVQMain {
 		for (int x = 0; x < test_input.length; x ++) {
 			int pred_val = crime_flvq.predict(test_input[x]);
 			System.out.print("Predicted = " + pred_val);
-			System.out.println("Actual = " + test_class[x]);
+			System.out.println(" | Actual = " + test_class[x]);
 		}
 
 	}	
