@@ -1,0 +1,20 @@
+
+Development Notes
+
+LVQ ALGORITHM
+-------------
+*	Supervised
+
+1. Initialize	-- OK
+	1.1 Feature Space is 2-Dimensional	// Not necessary to implement
+		1.1.1 One dimension per feature/attribute
+
+	1.2 Initialize Output neurons (Each neuron means a category)
+		1.2.1 Each neuron is predefined with a Category
+		1.2.2 Each neuron is predefined with a small random Weight Vector
+	
+	1.3 Initialize Input data
+		1.3.1 Each Input data has a corresponding Category
+		1.3.2 Each Input data has a corresponding location point in the Feature Space
+
+2. 
