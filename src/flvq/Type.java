@@ -1,6 +1,6 @@
 package flvq;
 
-import lvq.*;
+// import flvq.*;
 
 /*	Defines the type of data in the network
 	In lvq, this could be (a) Neuron or (b) Input Vector
