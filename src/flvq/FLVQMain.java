@@ -14,7 +14,7 @@ public class FLVQMain {
 		 *		neurons:		9
 		 *		clusters:		3 (Murder, Rape, Robbery)
 		 *		type:			0 			*/
-		LVQNetwork crime_lvq = new LVQNetwork(0.9, 1000, 60, 3, 0, 700, 1);
+		FLVQNetwork crime_lvq = new LVQNetwork(0.9, 1000, 60, 3, 0, 700, 1);
 	
 		/** Victim gender lvq network
 		 *		learning rate:	0.9
@@ -132,5 +132,5 @@ public class FLVQMain {
 		/* Training */
 		crime_lvq.train(crime_inputs, crime_inputs.length);
 	}	
-	
+
 }

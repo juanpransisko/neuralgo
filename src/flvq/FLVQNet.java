@@ -21,7 +21,7 @@ public class FLVQNet {
 	// This holds the number of iterations for training the network
 	//	Default is 100
 	private int iterations = 100;
-
+        
 	// Iteration counter
 	private int itr = 0;	
 		
@@ -53,7 +53,7 @@ public class FLVQNet {
 		this.iterations = iter;
 		this.category_type = 0;
 				
-		System.out.println("LVQ Network initialized with:");
+		System.out.println("FLVQ Network initialized with:");
 		System.out.println("Learning rate: " + this.learning_rate);
 		System.out.println("Iterations: " + this.iterations);
 		System.out.println("No. of Neurons: " + this.n_neurons);
@@ -67,7 +67,7 @@ public class FLVQNet {
 		this.iterations = 100;
 		this.category_type = 0;
 				
-		System.out.println("LVQ Network initialized with:");
+		System.out.println("FLVQ Network initialized with:");
 		System.out.println("Learning rate: " + this.learning_rate);
 		System.out.println("Iterations: " + this.iterations);
 		System.out.println("No. of Neurons: " + this.n_neurons);
@@ -85,7 +85,7 @@ public class FLVQNet {
 		this.limit1 = lim1;
 		this.limit2 = lim2;
 				
-		System.out.println("LVQ Network initialized with:");
+		System.out.println("FLVQ Network initialized with:");
 		System.out.println("Learning rate: " + this.learning_rate);
 		System.out.println("Iterations: " + this.iterations);
 		System.out.println("No. of Neurons: " + this.n_neurons);
@@ -243,6 +243,30 @@ public class FLVQNet {
 		new_values[1] = neuron[1] - (learning_rate * (input[1] - neuron[1]));
 		
 		return new_values;	
+	}
+
+	// For testing new inputs
+	public int predict(Data input) {
+		if (input.get_type() != Type.INPUT|| neurons[0].get_type() != Type.NEURON) 
+			System.err.println("Invalid parameters");
+
+		//Data winner = null;
+		int winner_pos = 0;
+		double curr_dist;
+		double min_dist = 1000;
+
+		// Get the distance from each neuron
+		for (int pos = 0; pos < neurons.length; pos ++) {
+			curr_dist = this.euclidean_dist(input.get_attrib(), neurons[pos].get_attrib());
+			// System.out.println("Current distance from input neuron: " + curr_dist);
+			
+			if (curr_dist < min_dist) {
+				min_dist = curr_dist;
+				winner_pos = pos;
+			}
+		}
+
+		return neurons[winner_pos].get_category();
 	}
 
 

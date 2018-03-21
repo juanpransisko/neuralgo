@@ -1,6 +1,6 @@
 package flvq;
 
-import flvq.*;
+// import flvq.*;
 import java.util.*;
 
 /*	Data Class
